@@ -5,6 +5,8 @@ type Print = { src: string; w: number; h: number; title: string; sub: string };
 // Faixa horizontal de prints dos painéis; rola de lado no mobile.
 export function PrintStrip({ prints, dark }: { prints: Print[]; dark?: boolean }) {
   return (
+    <>
+    <p className="swipe-hint mono">Deslize para ver mais →</p>
     <ul className={`prints ${dark ? "prints--dark" : ""}`}>
       {prints.map((p) => (
         <li key={p.src}>
@@ -22,5 +24,6 @@ export function PrintStrip({ prints, dark }: { prints: Print[]; dark?: boolean }
         </li>
       ))}
     </ul>
+    </>
   );
 }

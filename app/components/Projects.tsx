@@ -1,4 +1,6 @@
+import type { CSSProperties } from "react";
 import Image from "next/image";
+import { Reveal } from "./Reveal";
 import { Section } from "./Section";
 import { projects } from "../data";
 
@@ -10,24 +12,24 @@ export function Projects() {
         <span className="display">parte da história.</span>
       </h2>
       <div className="projects">
-        {projects.map((p) => (
-          <article key={p.name} className="project">
+        {projects.map((p, pi) => (
+          <Reveal key={p.name} className={`project ${pi % 2 ? "project--r" : ""}`}>
             <div className="slants">
-              {p.photos.map((src) => (
-                <div key={src} className="slant">
+              {p.photos.map((src, i) => (
+                <div key={src} className="slant" style={{ "--i": i } as CSSProperties}>
                   <Image src={`/images/${src}.webp`} alt={p.name} fill sizes="(max-width: 900px) 45vw, 22vw" />
                 </div>
               ))}
             </div>
             <dl className="spec">
-              {p.rows.map(([k, v]) => (
-                <div key={k}>
+              {p.rows.map(([k, v], i) => (
+                <div key={k} style={{ "--i": i } as CSSProperties}>
                   <dt className="mono">{k}</dt>
                   <dd>{v}</dd>
                 </div>
               ))}
             </dl>
-          </article>
+          </Reveal>
         ))}
       </div>
     </Section>
