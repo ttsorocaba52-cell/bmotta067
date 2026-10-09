@@ -85,7 +85,8 @@ export function Series() {
                 ].map(([label, d, tone]) => {
                   const data = d as { v: string; pct: number; tip: string };
                   return (
-                    <div className="bar-row bar-row--lg" key={label as string} tabIndex={0} data-tip={data.tip}>
+                    <div className="bar-row bar-row--lg" key={label as string} data-tip={data.tip}>
+                      <span className="sr-only">{data.tip}.</span>
                       <span className="mono">{label as string}</span>
                       <div className="bar bar--plain">
                         <i className={tone as string} style={{ width: `${data.pct}%` }} />
@@ -105,7 +106,8 @@ export function Series() {
             </h3>
             <div className="columns">
               {pace.monthly.map((m) => (
-                <div key={m.label} className="column" tabIndex={0} data-tip={m.tip}>
+                <div key={m.label} className="column" data-tip={m.tip}>
+                  <span className="sr-only">{m.tip}.</span>
                   <strong>
                     <Num value={m.value} />
                   </strong>

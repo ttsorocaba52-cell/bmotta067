@@ -34,7 +34,8 @@ export function Audience() {
               Visualizações por formato <span className="mono muted">90 dias</span>
             </h3>
             {formatBars.map((b) => (
-              <div className="bar-row" key={b.label} tabIndex={0} data-tip={b.tip}>
+              <div className="bar-row" key={b.label} data-tip={b.tip}>
+                <span className="sr-only">{b.tip}.</span>
                 <strong>{b.label}</strong>
                 <div className="bar">
                   <i className={`bar--${b.tone}`} style={{ width: `${b.pct}%` }} />
@@ -50,7 +51,8 @@ export function Audience() {
               Faixa etária <span className="mono muted">YouTube</span>
             </h3>
             {ageBars.map((b) => (
-              <div className="bar-row" key={b.label} tabIndex={0} data-tip={b.tip}>
+              <div className="bar-row" key={b.label} data-tip={b.tip}>
+                <span className="sr-only">{b.tip}.</span>
                 <span className="mono">{b.label}</span>
                 <div className="bar">
                   <i className="bar--red" style={{ width: `${b.pct}%` }} />

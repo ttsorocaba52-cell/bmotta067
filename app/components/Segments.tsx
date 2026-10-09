@@ -13,7 +13,7 @@ export function Segments() {
           </h3>
           <ol className="numbered numbered--tight seg-list">
             {segments.precisao.map((t, i) => (
-              <li key={t} tabIndex={0} style={{ "--i": i } as React.CSSProperties}>
+              <li key={t} style={{ "--i": i } as React.CSSProperties}>
                 <span className="mono seg-n">{String(i + 1).padStart(2, "0")}</span>
                 <strong>{t}</strong>
               </li>
@@ -26,7 +26,7 @@ export function Segments() {
           </h3>
           <ol className="numbered numbered--tight seg-list">
             {segments.alma.map((t, i) => (
-              <li key={t} tabIndex={0} style={{ "--i": i } as React.CSSProperties}>
+              <li key={t} style={{ "--i": i } as React.CSSProperties}>
                 <span className="mono seg-n">{String(offset + i + 1).padStart(2, "0")}</span>
                 <strong>{t}</strong>
               </li>

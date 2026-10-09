@@ -27,7 +27,7 @@ export function Opportunity() {
           </p>
           <ol className="numbered opp-list">
             {brandPoints.map((t, i) => (
-              <li key={t} tabIndex={0} style={{ "--i": i } as React.CSSProperties}>
+              <li key={t} style={{ "--i": i } as React.CSSProperties}>
                 <span className="mono opp-n">{String(i + 1).padStart(2, "0")}</span>
                 <strong>{t}</strong>
                 <span className="opp-arrow" aria-hidden>
