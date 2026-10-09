@@ -212,17 +212,20 @@ a {
   min-height: 100svh;
   display: flex;
   color: #fff;
-  background: var(--navy);
+  background: #142239; /* mesma cor do fundo do banner, para a emenda sumir */
   overflow: hidden;
 }
-.hero-bg {
-  object-fit: cover;
-  object-position: 50% 70%;
-}
-.hero-shade {
+.hero-media {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(21, 35, 63, 0.55) 0%, rgba(21, 35, 63, 0) 38%, rgba(21, 35, 63, 0.35) 62%, rgba(21, 35, 63, 0.95) 100%);
+}
+.hero-bg {
+  object-fit: contain;
+  object-position: 100% 50%;
+}
+/* o texto fica na metade esquerda, que é livre no banner */
+.hero-inner > * {
+  max-width: min(100%, 460px);
 }
 .hero-inner {
   position: relative;
@@ -237,7 +240,7 @@ a {
   opacity: 0.85;
 }
 .hero-title {
-  font-size: clamp(4.5rem, 15vw, 11rem);
+  font-size: clamp(4.5rem, 12vw, 8.5rem);
   line-height: 0.98;
   margin-top: 14px;
   color: var(--cream);
@@ -251,12 +254,12 @@ a {
 .hero-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px 40px;
+  gap: 14px 24px;
   margin-top: auto;
   padding-top: 40px;
 }
 .hero-stats li {
-  min-width: 130px;
+  min-width: 112px;
   border-top: 2px solid var(--gold);
   padding-top: 10px;
 }
@@ -1865,5 +1868,44 @@ body {
   .btn--sm {
     font-size: 0.7rem;
     padding: 7px 10px;
+  }
+}
+
+/* ---------- Hero com banner: empilha abaixo de 1100px ---------- */
+@media (max-width: 1100px) {
+  .hero {
+    flex-direction: column;
+    min-height: 0;
+  }
+  .hero-media {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+  .hero-bg {
+    object-fit: cover;
+  }
+  .hero-inner {
+    padding-top: 28px;
+    padding-bottom: 32px;
+  }
+  .hero-inner > * {
+    max-width: none;
+  }
+  .hero-stats {
+    margin-top: 0;
+  }
+}
+@media (max-width: 800px) {
+  .hero {
+    min-height: 0;
+  }
+  .hero-media {
+    aspect-ratio: 1 / 1;
+    margin-top: 44px;
+  }
+  .hero-inner {
+    padding-top: 20px;
   }
 }

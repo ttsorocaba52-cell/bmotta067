@@ -5,15 +5,16 @@ import { heroStats } from "../data";
 export function Hero() {
   return (
     <section id="topo" className="hero">
-      <Image
-        src="/images/hero-estrada.webp"
-        alt="Ford Mustang clássico e Audi A5 Sportback na estrada ao pôr do sol"
-        fill
-        priority
-        sizes="100vw"
-        className="hero-bg"
-      />
-      <div className="hero-shade" />
+      <div className="hero-media">
+        <Image
+          src="/images/hero-banner.webp"
+          alt="Bruno Motta em retrato, com fotos do Mustang clássico, do Audi A5 e da garagem"
+          fill
+          priority
+          sizes="100vw"
+          className="hero-bg"
+        />
+      </div>
       <div className="wrap hero-inner">
         <p className="mono hero-kicker">Por Bruno Motta · Media Kit 2026</p>
         <h1 className="display hero-title">
