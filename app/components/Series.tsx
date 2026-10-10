@@ -1,7 +1,8 @@
 import { Num } from "./Num";
 import Image from "next/image";
 import { Section } from "./Section";
-import { episodes, pace } from "../data";
+import { episodes, pace, seriesPhotos } from "../data";
+import { Carousel } from "./Carousel";
 
 export function Series() {
   return (
@@ -19,13 +20,7 @@ export function Series() {
             </p>
           </div>
           <figure className="series-photo">
-            <Image
-              src="/images/golf.webp"
-              alt="Volkswagen Golf GTI branco com o capô aberto"
-              width={772}
-              height={652}
-              sizes="(max-width: 900px) 100vw, 30vw"
-            />
+            <Carousel slides={seriesPhotos} />
           </figure>
         </div>
         <div className="episodes">

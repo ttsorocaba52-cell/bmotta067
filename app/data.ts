@@ -237,3 +237,9 @@ export const partners = [
     text: "Parceria mais recente, que já apareceu em vários conteúdos e segue presente nos projetos.",
   },
 ];
+
+export const seriesPhotos = [
+  { src: "series-bmw", w: 900, h: 1200, position: "50% 72%", alt: "BMW M3 verde estacionada à sombra de uma árvore" },
+  { src: "series-golf", w: 900, h: 773, position: "50% 55%", alt: "Volkswagen Golf GTI branco com o capô aberto, em uma rua molhada" },
+  { src: "series-audi", w: 900, h: 822, position: "50% 60%", alt: "Audi preto com difusor de carbono, visto de trás" },
+];
