@@ -1946,3 +1946,42 @@ body {
 .nav-links a {
   padding: 10px 2px;
 }
+
+/* ---------- Audiência: origem de cada dado ---------- */
+.src {
+  font-family: var(--ff-mono), monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.src strong {
+  display: inline-block;
+  margin-right: 2px;
+  padding: 2px 7px;
+  background: var(--navy);
+  color: var(--cream);
+  font-weight: 500;
+}
+h2.title-grotesk + .src {
+  margin-top: 22px;
+}
+.kpis {
+  margin-top: 12px;
+}
+.panel > .src {
+  margin-bottom: 8px;
+}
+.spec-tag {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 8px;
+  background: var(--navy);
+  color: var(--cream);
+  font-family: var(--ff-mono), monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 2px;
+}

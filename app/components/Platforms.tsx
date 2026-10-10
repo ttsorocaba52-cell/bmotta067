@@ -6,7 +6,7 @@ import { platforms, platformPrints } from "../data";
 export function Platforms() {
   return (
     <>
-      <Section theme="cream" label="04 — Multiplataforma" tag="Out 2026">
+      <Section theme="cream" label="06 — Multiplataforma" tag="Out 2026">
         <div className="split-head split-head--end">
           <h2 className="display title-display">Uma história, quatro telas.</h2>
           <p className="total">
@@ -42,7 +42,7 @@ export function Platforms() {
         </div>
       </Section>
 
-      <Section theme="navy" label="04 — Prova social" tag="Prints originais">
+      <Section theme="navy" label="07 — Prova social" tag="Prints originais">
         <div className="split-head">
           <h2 className="display title-display">
             Em todas as <span className="gold">telas.</span>

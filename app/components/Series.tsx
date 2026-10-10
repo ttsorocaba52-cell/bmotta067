@@ -6,7 +6,7 @@ import { episodes, pace } from "../data";
 export function Series() {
   return (
     <>
-      <Section id="serie" theme="navy" label="06 — Série original" tag="No ar" className="sec--live">
+      <Section id="serie" theme="navy" label="09 — Série original" tag="No ar" className="sec--live">
         <div className="series">
           <div>
             <h2 className="display title-display title-xl">
@@ -60,7 +60,7 @@ export function Series() {
         </div>
       </Section>
 
-      <Section theme="cream" label="06B — A série escala" tag="Andando com seguidores">
+      <Section theme="cream" label="10 — A série escala" tag="Andando com seguidores">
         <div className="split-head">
           <h2 className="display title-display">Não é hype. É ritmo.</h2>
           <p className="lede">

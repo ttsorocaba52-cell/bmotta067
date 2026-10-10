@@ -4,7 +4,7 @@ import { brandPoints } from "../data";
 
 export function Opportunity() {
   return (
-    <Section id="parcerias" theme="paper" label="07 / Oportunidade para marcas" tag="Precisão & Alma" mono>
+    <Section id="parcerias" theme="paper" label="11 / Oportunidade para marcas" tag="Precisão & Alma" mono>
       <div className="opportunity">
         <figure className="opp-photo">
           <Image

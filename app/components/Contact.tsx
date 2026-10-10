@@ -6,7 +6,7 @@ export function Contact() {
     <section id="contato" className="contact">
       <div className="contact-text">
         <div className="sec-head sec-head--mono">
-          <span>12 / Contato</span>
+          <span>16 / Contato</span>
         </div>
         <h2 className="title-grotesk">
           Vamos construir

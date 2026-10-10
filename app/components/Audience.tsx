@@ -10,10 +10,13 @@ export function Audience() {
         id="audiencia"
         theme="paper"
         label="04 / Audiência"
-        tag="Instagram · últimos 90 dias · 5 jul – 2 out 2026"
+        tag="Out 2026"
         mono
       >
         <h2 className="title-grotesk">Ficha da audiência.</h2>
+        <p className="src">
+          <strong>Instagram</strong> | últimos 90 dias · 5 jul – 2 out 2026
+        </p>
         <ul className="kpis">
           {audienceKpis.map((k) => (
             <li key={k.n}>
@@ -30,9 +33,10 @@ export function Audience() {
 
         <div className="panels">
           <div className="panel">
-            <h3>
-              Visualizações por formato <span className="mono muted">90 dias</span>
-            </h3>
+            <p className="src">
+              <strong>Instagram</strong> | últimos 90 dias
+            </p>
+            <h3>Visualizações por formato</h3>
             {formatBars.map((b) => (
               <div className="bar-row" key={b.label} data-tip={b.tip}>
                 <span className="sr-only">{b.tip}.</span>
@@ -47,9 +51,10 @@ export function Audience() {
             ))}
           </div>
           <div className="panel">
-            <h3>
-              Faixa etária <span className="mono muted">YouTube</span>
-            </h3>
+            <p className="src">
+              <strong>YouTube</strong> | faixa etária
+            </p>
+            <h3>Faixa etária do público</h3>
             {ageBars.map((b) => (
               <div className="bar-row" key={b.label} data-tip={b.tip}>
                 <span className="sr-only">{b.tip}.</span>
@@ -65,9 +70,10 @@ export function Audience() {
             <p className="mono muted small">66% entre 18 e 44 anos</p>
           </div>
           <div className="panel">
-            <h3>
-              Últimos 30 dias <span className="mono muted">IG</span>
-            </h3>
+            <p className="src">
+              <strong>Instagram</strong> | últimos 30 dias
+            </p>
+            <h3>Resultado recente</h3>
             <ul className="mini-list">
               {last30.map((r) => (
                 <li key={r.label}>
@@ -82,7 +88,7 @@ export function Audience() {
         </div>
       </Section>
 
-      <Section theme="cream" label="04 — Prova social" tag="Prints originais">
+      <Section theme="cream" label="05 — Prova social" tag="Prints originais">
         <div className="split-head">
           <h2 className="display title-display">Direto dos insights.</h2>
           <p className="lede">

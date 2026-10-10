@@ -13,7 +13,7 @@ export function Philosophy() {
       <div className="philo-shade" />
       <div className="wrap philo-inner">
         <div className="philo-top mono">
-          <span>10 / Filosofia das parcerias</span>
+          <span>14 / Filosofia das parcerias</span>
           <span>Precisão &amp; Alma</span>
         </div>
         <p className="mono philo-words">Precisão · Alma · História</p>

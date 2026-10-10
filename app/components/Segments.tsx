@@ -4,7 +4,7 @@ import { segments } from "../data";
 export function Segments() {
   const offset = segments.precisao.length;
   return (
-    <Section theme="cream" label="09 / Segmentos de interesse" mono className="sec--segments">
+    <Section theme="cream" label="13 / Segmentos de interesse" mono className="sec--segments">
       <h2 className="title-grotesk">Marcas que fazem sentido para essa história.</h2>
       <div className="segments">
         <div>

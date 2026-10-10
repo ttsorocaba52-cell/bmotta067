@@ -6,7 +6,7 @@ import { projects } from "../data";
 
 export function Projects() {
   return (
-    <Section theme="cream" label="05 / Projetos · Precisão" tag="Projetos · Alma" mono>
+    <Section theme="cream" label="08 / Projetos · Precisão" tag="Projetos · Alma" mono>
       <h2 className="title-mixed">
         <span className="title-grotesk">Projetos que fazem</span>{" "}
         <span className="display">parte da história.</span>
@@ -22,10 +22,13 @@ export function Projects() {
               ))}
             </div>
             <dl className="spec">
-              {p.rows.map(([k, v], i) => (
+              {p.rows.map(([k, v, tag], i) => (
                 <div key={k} style={{ "--i": i } as CSSProperties}>
                   <dt className="mono">{k}</dt>
-                  <dd>{v}</dd>
+                  <dd>
+                    {v}
+                    {tag && <span className="spec-tag">{tag}</span>}
+                  </dd>
                 </div>
               ))}
             </dl>

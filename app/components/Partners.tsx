@@ -4,7 +4,7 @@ import { partners } from "../data";
 
 export function Partners() {
   return (
-    <Section theme="navy" label="11 — Parceiros" tag="Quem já está na garagem">
+    <Section theme="navy" label="15 — Parceiros" tag="Quem já está na garagem">
       <div className="split-head">
         <h2 className="display title-display">Marcas que já fazem parte da história.</h2>
         <p className="lede">

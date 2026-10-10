@@ -2,8 +2,8 @@ export const contact = {
   instagram: "@bmotta067",
   instagramUrl: "https://instagram.com/bmotta067",
   email: "contatobmotta067@gmail.com",
-  whatsapp: "+55 (67) 9902-3990",
-  whatsappUrl: "https://wa.me/556799023990",
+  whatsapp: "+55 (67) 99902-3990",
+  whatsappUrl: "https://wa.me/5567999023990",
 };
 
 export const heroStats = [
@@ -130,6 +130,7 @@ export const projects = [
       ["Modelo", "Audi A5 Sportback"],
       ["Origem", "Alemanha"],
       ["Foco", "Estética, detalhes e rotina"],
+      ["Fase atual", "Stage 2 + escape full", "Projeto finalizado"],
     ],
   },
   {
@@ -138,6 +139,7 @@ export const projects = [
     rows: [
       ["Modelo", "Ford Mustang Clássico"],
       ["Origem", "Estados Unidos"],
+      ["Ano", "1966"],
       ["Na garagem", "Ford F-100 · Ford F-150 Raptor"],
     ],
   },
@@ -209,7 +211,7 @@ export const formats = [
 
 export const segments = {
   precisao: ["Tecnologia automotiva", "Performance", "Lubrificantes", "Combustível", "Ferramentas"],
-  alma: ["Estética automotiva", "Peças e acessórios", "Pneus", "Lifestyle"],
+  alma: ["Estética automotiva", "Peças e acessórios", "Pneus", "Lifestyle", "Roupas e moda"],
 };
 
 export const partners = [
