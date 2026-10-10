@@ -1,7 +1,7 @@
 import { Num } from "./Num";
 import { Section } from "./Section";
 import { PrintStrip } from "./PrintStrip";
-import { heroStats, audienceKpis, formatBars, ageBars, last30, insightPrints } from "../data";
+import { audienceKpis, formatBars, ageBars, last30, insightPrints } from "../data";
 
 export function Audience() {
   return (
@@ -13,16 +13,7 @@ export function Audience() {
         tag="Out 2026"
         mono
       >
-        <div className="aud-head">
-          <h2 className="title-grotesk">Ficha da audiência.</h2>
-          <div className="aud-total">
-            <strong>
-              <Num value={heroStats[0].value} />
-            </strong>
-            <span className="mono">{heroStats[0].label}</span>
-            <span className="mono aud-total-sub">Instagram + YouTube + Facebook + TikTok</span>
-          </div>
-        </div>
+        <h2 className="title-grotesk">Ficha da audiência.</h2>
         <p className="src">
           <strong>Instagram</strong> | últimos 90 dias · 5 jul – 2 out 2026
         </p>
