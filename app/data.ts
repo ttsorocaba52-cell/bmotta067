@@ -27,6 +27,13 @@ export const universe = {
     { src: "bastidores", label: "Bastidores" },
     { src: "estrada", label: "Estrada" },
     { src: "rotina", label: "Rotina" },
+    {
+      src: "universo-evento",
+      label: "Experiências",
+      wide: true,
+      alt: "Grupo de amigos em um evento à noite, com a estrutura iluminada do palco ao fundo",
+      position: "50% 46%",
+    },
   ],
 };
 

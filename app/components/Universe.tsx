@@ -29,13 +29,14 @@ export function Universe() {
         </div>
         <div className="polaroids">
           {universe.photos.map((p, i) => (
-            <figure key={p.src} className="polaroid">
+            <figure key={p.src} className={`polaroid ${p.wide ? "polaroid--wide" : ""}`}>
               <div className="polaroid-img">
                 <Image
                   src={`/images/${p.src}.webp`}
-                  alt={p.label}
+                  alt={p.alt ?? p.label}
                   fill
-                  sizes="(max-width: 900px) 50vw, 25vw"
+                  sizes={p.wide ? "(max-width: 900px) 100vw, 45vw" : "(max-width: 900px) 50vw, 25vw"}
+                  style={p.position ? { objectPosition: p.position } : undefined}
                 />
               </div>
               <figcaption className="display">
