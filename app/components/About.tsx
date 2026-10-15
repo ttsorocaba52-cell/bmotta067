@@ -37,32 +37,16 @@ export function About() {
             ))}
           </ol>
         </div>
-        <div className="about-photos">
-          <figure className="about-photo">
-            <Image
-              src="/images/sobre-bruno.webp"
-              alt="Bruno Motta ao lado de um Audi A5 com a orla ao fundo"
-              width={940}
-              height={1306}
-              sizes="(max-width: 900px) 100vw, 40vw"
-            />
-            <figcaption className="mono">Fig. 01 — Bruno Motta</figcaption>
-          </figure>
-          <figure className="about-pair">
-            <figcaption className="mono">
-              <span>Fig. 02</span>
-            </figcaption>
-            <div className="about-pair-img">
-              <Image
-                src="/images/sobre-garagem.webp"
-                alt="Porsche 911 branco e Lamborghini cinza lado a lado em uma garagem"
-                width={900}
-                height={1200}
-                sizes="(max-width: 900px) 62vw, 26vw"
-              />
-            </div>
-          </figure>
-        </div>
+        <figure className="about-photo">
+          <Image
+            src="/images/sobre-bruno.webp"
+            alt="Bruno Motta ao lado de um Audi A5 com a orla ao fundo"
+            width={940}
+            height={1306}
+            sizes="(max-width: 900px) 100vw, 40vw"
+          />
+          <figcaption className="mono">Fig. 01 — Bruno Motta</figcaption>
+        </figure>
       </div>
     </Section>
   );
