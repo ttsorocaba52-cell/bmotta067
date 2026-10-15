@@ -19,7 +19,7 @@ export function Contact() {
           <div>
             <dt className="mono">Instagram</dt>
             <dd>
-              <a href={contact.instagramUrl} target="_blank" rel="noreferrer">
+              <a href={contact.instagramUrl} target="_blank" rel="noopener noreferrer">
                 {contact.instagram}
               </a>
             </dd>
@@ -33,13 +33,13 @@ export function Contact() {
           <div>
             <dt className="mono">WhatsApp</dt>
             <dd>
-              <a href={contact.whatsappUrl} target="_blank" rel="noreferrer">
+              <a href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">
                 {contact.whatsapp}
               </a>
             </dd>
           </div>
         </dl>
-        <a className="btn btn--navy" href={contact.whatsappUrl} target="_blank" rel="noreferrer">
+        <a className="btn btn--navy" href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">
           Chamar no WhatsApp
         </a>
         <p className="contact-foot mono">

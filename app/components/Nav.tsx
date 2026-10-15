@@ -20,7 +20,7 @@ export function Nav() {
           </a>
         ))}
       </nav>
-      <a className="btn btn--gold btn--sm" href={contact.whatsappUrl} target="_blank" rel="noreferrer">
+      <a className="btn btn--gold btn--sm" href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">
         Falar com o Bruno
       </a>
     </header>

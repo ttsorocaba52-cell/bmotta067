@@ -4,3 +4,10 @@
 next-env.d.ts
 *.tsbuildinfo
 .DS_Store
+
+# segredos e chaves (nunca versionar)
+.env
+.env.*
+!.env.example
+*.pem
+*.key

@@ -58,7 +58,7 @@ export function FormatPicker({ formats, whatsappUrl }: { formats: Format[]; what
               Limpar
             </button>
           )}
-          <a className="btn btn--navy" href={href} target="_blank" rel="noreferrer">
+          <a className="btn btn--navy" href={href} target="_blank" rel="noopener noreferrer">
             {picked.length ? "Enviar no WhatsApp" : "Falar no WhatsApp"}
           </a>
         </div>

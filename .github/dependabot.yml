@@ -1,0 +1,8 @@
+# Atualizações automáticas de dependências (inclui correções de segurança do Next.js)
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
