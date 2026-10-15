@@ -2260,3 +2260,199 @@ h2.title-grotesk + .src {
     font-size: 0.72rem;
   }
 }
+
+/* ---------- Resultados: um vídeo em várias redes (Veríssimo) ---------- */
+.chan-wrap {
+  display: grid;
+  grid-template-columns: 208px 1fr;
+  gap: 28px;
+  margin-top: 36px;
+}
+.chan-video {
+  align-self: start;
+  border-bottom: 3px solid var(--navy);
+}
+.chan-video img {
+  width: 100%;
+  height: auto;
+}
+.chan-list li {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 4px 20px;
+  padding: 14px 0 16px;
+  border-top: 1px solid var(--navy);
+}
+.chan-list .is-top {
+  border-top: 3px solid var(--gold);
+}
+.chan-name {
+  align-self: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  color: var(--navy);
+}
+.chan-track {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.chan-bar {
+  flex: 1;
+  height: 30px;
+}
+.chan-value {
+  flex: none;
+  min-width: 112px;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-align: right;
+  color: var(--navy);
+}
+.chan-list .is-top .chan-value {
+  color: var(--gold-dark);
+}
+.chan-detail {
+  grid-column: 2;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.chan-list li {
+  transition: background-color 0.2s ease;
+}
+.chan-list li:hover {
+  background: rgba(21, 35, 63, 0.05);
+}
+.chan-list li:hover .bar i {
+  filter: brightness(1.15);
+}
+@media (max-width: 800px) {
+  .chan-wrap {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .chan-video {
+    max-width: 150px;
+  }
+  .chan-list li {
+    grid-template-columns: 1fr;
+  }
+  .chan-detail {
+    grid-column: 1;
+  }
+  .chan-value {
+    min-width: 96px;
+  }
+}
+
+/* ---------- Entrega: uma parceria, quatro redes ---------- */
+.block {
+  display: block;
+}
+.delivery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 8px;
+}
+.delivery li {
+  padding-top: 16px;
+  border-top: 1px solid rgba(239, 229, 208, 0.35);
+  position: relative;
+}
+.delivery li::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.45s cubic-bezier(0.22, 0.8, 0.32, 1);
+}
+.delivery li:first-child::before,
+.delivery li:hover::before {
+  transform: none;
+}
+.delivery h3 {
+  margin: 10px 0 8px;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  line-height: 1;
+  color: var(--cream);
+  transition: transform 0.3s ease;
+}
+.delivery li:hover h3 {
+  transform: translateX(6px);
+}
+.delivery-kind {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+.delivery li > p:last-child {
+  font-size: 0.97rem;
+  opacity: 0.88;
+}
+.delivery-foot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 56px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(239, 229, 208, 0.3);
+  text-transform: uppercase;
+}
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .reveal .delivery li {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.55s ease calc(0.15s + var(--i) * 110ms), transform 0.55s cubic-bezier(0.22, 0.8, 0.32, 1) calc(0.15s + var(--i) * 110ms);
+  }
+  .reveal.is-in .delivery li {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal .chan-list li {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease calc(0.2s + var(--i) * 120ms), transform 0.5s ease calc(0.2s + var(--i) * 120ms), background-color 0.2s ease;
+  }
+  .reveal.is-in .chan-list li {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 1000px) {
+  .delivery {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 24px;
+  }
+}
+@media (max-width: 560px) {
+  .delivery {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .delivery-foot {
+    margin-top: 36px;
+    font-size: 0.74rem;
+  }
+}
+
+.split-head--end .title-display {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.res-partner {
+  flex: none;
+  max-width: 42%;
+}
+@media (max-width: 800px) {
+  .res-partner {
+    max-width: none;
+  }
+}

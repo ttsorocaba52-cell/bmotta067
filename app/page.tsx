@@ -12,6 +12,7 @@ import { Segments } from "./components/Segments";
 import { Philosophy } from "./components/Philosophy";
 import { Partners } from "./components/Partners";
 import { Results } from "./components/Results";
+import { Delivery } from "./components/Delivery";
 import { Contact } from "./components/Contact";
 
 export default function Page() {
@@ -32,6 +33,7 @@ export default function Page() {
         <Philosophy />
         <Partners />
         <Results />
+        <Delivery />
         <Contact />
       </main>
     </>

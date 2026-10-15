@@ -267,4 +267,62 @@ export const partnerResults = [
     ],
     source: "Fonte: Insights do Instagram · publicações em collab com @racetuner · views por publicação",
   },
+  {
+    partner: "Guga’s Car",
+    logo: "gugas-car",
+    scope: "Estética · PPF · ~2 anos",
+    title: "Um post. 1,5 milhão de views.",
+    kpis: [
+      { value: "2,08 mi", label: "Views em 14 publis", big: true },
+      { value: "34,3 mil", label: "Curtidas" },
+      { value: "1.650", label: "Envios por DM" },
+      { value: "1.485", label: "Salvamentos" },
+    ],
+    posts: [
+      { img: "gc-1", alt: "Audi A5 Sportback branco visto de cima e de trás, estacionado", value: "1,53 mi", name: "Audi A5 · Foto", metric: "303 visitas ao perfil", top: true },
+      { img: "gc-2", alt: "Traseira de um Audi A5 branco em uma rua ao entardecer", value: "99,6 mil", name: "Audi A5 · Foto", metric: "81% via Explorar" },
+      { img: "gc-3", alt: "Roda de liga leve de um Audi A5 branco, em close", value: "91,0 mil", name: "Audi A5 · Reel", metric: "552 envios por DM" },
+      { img: "gc-4", alt: "Audi A5 branco dentro de uma oficina", value: "66,7 mil", name: "Audi A5 · Foto", metric: "64 mil alcançados" },
+      { img: "gc-5", alt: "Audi A5 branco estacionado sob uma árvore", value: "64,7 mil", name: "Audi A5 · Reel", metric: "6 mil curtidas" },
+      { img: "gc-6", alt: "Dois carros lado a lado na Guga’s Car, um preto e um branco", value: "44,4 mil", name: "Na Guga’s Car", metric: "21 mil alcançados" },
+    ],
+    source: "Fonte: Insights do Instagram · 14 publicações em collab com @gugas_car_ · 6 em destaque",
+  },
+  {
+    partner: "Veríssimo",
+    logo: "verissimo",
+    scope: "Acessórios automotivos",
+    title: "Um vídeo. 3 redes. 837 mil views.",
+    kpis: [
+      { value: "837 mil", label: "Views somadas", big: true },
+      { value: "33,8 mil", label: "Curtidas" },
+      { value: "+1,5 mil", label: "Novos seguidores" },
+      { value: "29 s", label: "Tempo médio" },
+    ],
+    video: { img: "ver-video", alt: "Frame do vídeo: Bruno em frente à loja, com o perfil da Veríssimo na tela do celular" },
+    channels: [
+      { name: "YouTube", value: "618,7 mil", pct: 100, top: true, detail: "17,3 mil gostei · +1,2 mil inscritos" },
+      { name: "Instagram", value: "118,4 mil", pct: 19, detail: "7,9 mil curtidas · 229 salvamentos · +138 seguidores" },
+      { name: "TikTok", value: "100,1 mil", pct: 16, detail: "8,6 mil curtidas · 24% assistiram até o fim · +225 seguidores" },
+    ],
+    source: "Fonte: YouTube Studio, Insights do Instagram e TikTok Studio · mesmo vídeo publicado nas 3 redes · set–out 2026",
+  },
 ];
+
+// Numeração em sequência: resultados a partir do 16, depois a entrega e o contato.
+export const RESULTS_START = 16;
+export const DELIVERY_NUMBER = RESULTS_START + partnerResults.length;
+export const CONTACT_NUMBER = DELIVERY_NUMBER + 1;
+
+export const delivery = {
+  title: ["Uma parceria.", "Quatro redes."],
+  text: "Toda ativação é divulgada nas 4 plataformas principais. A marca não compra um post: compra presença em todos os públicos da página.",
+  channels: [
+    { n: "P.01", name: "Instagram", kind: "Reels + Stories", text: "Vídeo principal em collab com a marca, mais stories de bastidores com menção." },
+    { n: "P.02", name: "TikTok", kind: "Vídeo", text: "O mesmo conteúdo publicado no perfil, com a marca marcada." },
+    { n: "P.03", name: "YouTube", kind: "Shorts", text: "O vídeo da parceria nos Shorts, onde a página tem o maior alcance." },
+    { n: "P.04", name: "Facebook", kind: "Post cruzado", text: "Publicação cruzada do Instagram, levando a marca a mais um público." },
+  ],
+  footLeft: "1 conteúdo → 4 publicações",
+  footRight: "Ex.: Veríssimo · 837 mil views somadas",
+};
