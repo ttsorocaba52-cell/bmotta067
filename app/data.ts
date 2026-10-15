@@ -326,7 +326,8 @@ export const partnerResults = [
 // Numeração em sequência: resultados a partir do 16, depois a entrega e o contato.
 export const RESULTS_START = 16;
 export const DELIVERY_NUMBER = RESULTS_START + partnerResults.length;
-export const CONTACT_NUMBER = DELIVERY_NUMBER + 1;
+export const TESTIMONIALS_NUMBER = DELIVERY_NUMBER + 1;
+export const CONTACT_NUMBER = TESTIMONIALS_NUMBER + 1;
 
 export const delivery = {
   title: ["Uma parceria.", "Quatro redes."],
@@ -339,4 +340,24 @@ export const delivery = {
   ],
   footLeft: "1 conteúdo → 4 publicações",
   footRight: "Ex.: Veríssimo · 837 mil views somadas",
+};
+
+export const testimonials = {
+  title: ["Nas palavras", "dos parceiros."],
+  tag: "Quem já trabalha junto",
+  note: "Falas reais, enviadas por áudio e DM · 2026",
+  items: [
+    {
+      quote: "Você tá sendo parceiro, tá ajudando, tem cara vindo atrás. Tá dando mais resultado que muito perfil com um monte de seguidor que não traz um cliente.",
+      name: "Medina",
+      role: "Fundador · Race Tuner",
+      logo: "race-tuner",
+    },
+    {
+      quote: "Você é o cara. Além de meu amigo, um influencer que eu admiro demais.",
+      name: "Gustavo",
+      role: "Fundador · Guga’s Car",
+      logo: "gugas-car",
+    },
+  ],
 };
