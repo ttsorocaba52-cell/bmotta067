@@ -243,3 +243,28 @@ export const seriesPhotos = [
   { src: "series-golf", w: 900, h: 773, position: "50% 55%", alt: "Volkswagen Golf GTI branco com o capô aberto, em uma rua molhada" },
   { src: "series-bmw", w: 900, h: 1200, position: "50% 72%", alt: "BMW M3 verde estacionada à sombra de uma árvore" },
 ];
+
+// Resultados por parceiro. Cada item vira uma seção (numerada em sequência a partir de 16).
+export const partnerResults = [
+  {
+    partner: "Race Tuner",
+    logo: "race-tuner",
+    scope: "Mecânica · Remap · ~2 anos",
+    title: "O que a parceria entregou.",
+    kpis: [
+      { value: "423 mil", label: "Views em 6 publis", big: true },
+      { value: "51,2 mil", label: "Curtidas" },
+      { value: "1.912", label: "Salvamentos" },
+      { value: "1.305", label: "Envios por DM" },
+    ],
+    posts: [
+      { img: "rt-raptor", alt: "Ford Raptor coberto, dentro da oficina", value: "165,8 mil", name: "Ford Raptor", metric: "16,9 mil curtidas", top: true },
+      { img: "rt-ram", alt: "Ram TRX cinza dentro da oficina", value: "84,8 mil", name: "Ram TRX", metric: "80,5 mil alcançados" },
+      { img: "rt-porsche-1", alt: "Traseira de um Porsche 911 vermelho com chama no escapamento", value: "75,6 mil", name: "Porsche 911", metric: "494 salvamentos" },
+      { img: "rt-shelby", alt: "Shelby GT500 vermelho com o capô aberto", value: "66,7 mil", name: "Shelby GT500", metric: "691 reposts" },
+      { img: "rt-bmw", alt: "BMW M3 branca com o capô aberto", value: "17,6 mil", name: "BMW M3", metric: "47 visitas ao perfil" },
+      { img: "rt-porsche-2", alt: "Traseira de um Porsche 911 vermelho", value: "12,7 mil", name: "Porsche 911", metric: "751 curtidas" },
+    ],
+    source: "Fonte: Insights do Instagram · publicações em collab com @racetuner · views por publicação",
+  },
+];

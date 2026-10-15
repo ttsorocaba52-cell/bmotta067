@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { contact } from "../data";
+import { contact, partnerResults } from "../data";
+import { FIRST_RESULTS_NUMBER } from "./Results";
 
 export function Contact() {
   return (
     <section id="contato" className="contact">
       <div className="contact-text">
         <div className="sec-head sec-head--mono">
-          <span>16 / Contato</span>
+          <span>{FIRST_RESULTS_NUMBER + partnerResults.length} / Contato</span>
         </div>
         <h2 className="title-grotesk">
           Vamos construir

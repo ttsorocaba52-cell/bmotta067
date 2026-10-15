@@ -11,6 +11,7 @@ import { Formats } from "./components/Formats";
 import { Segments } from "./components/Segments";
 import { Philosophy } from "./components/Philosophy";
 import { Partners } from "./components/Partners";
+import { Results } from "./components/Results";
 import { Contact } from "./components/Contact";
 
 export default function Page() {
@@ -30,6 +31,7 @@ export default function Page() {
         <Segments />
         <Philosophy />
         <Partners />
+        <Results />
         <Contact />
       </main>
     </>
