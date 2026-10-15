@@ -236,6 +236,13 @@ export const partners = [
     scope: "Ímãs de placa",
     text: "Parceria mais recente, que já apareceu em vários conteúdos e segue presente nos projetos.",
   },
+  {
+    name: "Veríssimo",
+    logo: "verissimo",
+    since: "Parceiro",
+    scope: "Acessórios",
+    text: "Acessórios automotivos que entram nos projetos e no dia a dia dos carros.",
+  },
 ];
 
 export const seriesPhotos = [

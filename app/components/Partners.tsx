@@ -6,7 +6,7 @@ export function Partners() {
   return (
     <Section theme="navy" label="15 — Parceiros" tag="Quem já está na garagem">
       <div className="split-head">
-        <h2 className="display title-display">Marcas que já fazem parte da história.</h2>
+        <h2 className="display title-display title-wide">Marcas que já fazem parte da história.</h2>
         <p className="lede">
           Parcerias de longo prazo, que acompanham os projetos desde o começo — não publis isoladas.
         </p>

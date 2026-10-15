@@ -951,7 +951,7 @@ a {
 /* ---------- Parceiros ---------- */
 .partners {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(20px, 3vw, 40px);
   margin-top: 40px;
 }
@@ -1473,7 +1473,7 @@ a {
     grid-template-columns: 1fr 1fr;
   }
   .partners {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 800px) {
@@ -2454,5 +2454,36 @@ h2.title-grotesk + .src {
 @media (max-width: 800px) {
   .res-partner {
     max-width: none;
+  }
+}
+
+/* ---------- Parceiros: 4 marcas ---------- */
+.split-head .title-wide {
+  max-width: 15em;
+}
+.partner-id {
+  gap: 14px;
+}
+.partner-id img {
+  width: 84px;
+  height: 84px;
+}
+.partner-id h3 {
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  line-height: 1;
+}
+@media (max-width: 600px) {
+  .partners {
+    grid-template-columns: 1fr;
+  }
+  .partner-id img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 801px) {
+  .split-head .title-wide {
+    font-size: clamp(2.8rem, 4.9vw, 4.4rem);
   }
 }
