@@ -2492,5 +2492,16 @@ h2.title-grotesk + .src {
   grid-column: 1 / -1;
 }
 .polaroid--wide .polaroid-img {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 5;
+}
+
+/* Universo: com o quadro vertical a coluna da direita fica alta; o texto acompanha a rolagem no desktop */
+@media (min-width: 1001px) {
+  .universe {
+    align-items: start;
+  }
+  .universe > div:first-child {
+    position: sticky;
+    top: 110px;
+  }
 }
